@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Грачев Алексей Сергеевич | CNC Engineer</title>
+  <meta name="description" content="Инженер-программист ЧПУ: Siemens NX, постпроцессоры, 5-осевая обработка, реверс-инжиниринг"/>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+</head>
+<body>
+  <!-- Background Grid -->
+  <div class="tech-grid"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <i class="fas fa-cog fa-spin"></i>
+        <span>CNC</span><span class="accent">ENGINEER</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link"><span class="nav-number">01.</span> Обо мне</a></li>
+        <li><a href="#experience" class="nav-link"><span class="nav-number">02.</span> Опыт</a></li>
+        <li><a href="#skills" class="nav-link"><span class="nav-number">03.</span> Навыки</a></li>
+        <li><a href="#projects" class="nav-link"><span class="nav-number">04.</span> Проекты</a></li>
+        <li><a href="#contact" class="nav-link"><span class="nav-number">05.</span> Контакты</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Меню">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <i class="fas fa-microchip"></i>
+          <span>CNC PROGRAMMING & ROBOTICS</span>
+        </div>
+        <h1 class="glitch" data-text="ГРАЧЕВ АЛЕКСЕЙ СЕРГЕЕВИЧ">ГРАЧЕВ АЛЕКСЕЙ СЕРГЕЕВИЧ</h1>
+        <h2 class="typewriter">ВЕДУЩИЙ ИНЖЕНЕР-ПРОГРАММИСТ ЧПУ</h2>
+        <p class="hero-desc">
+          Разработка управляющих программ для <span class="highlight">5-осевых станков</span> и 
+          <span class="highlight">роботизированных комплексов</span>. 
+          Постпроцессоры • Реверс-инжиниринг • Аддитивные технологии
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value" data-count="10">0</span>
+            <span class="stat-label">ЛЕТ ОПЫТА</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" data-count="50">0</span>
+            <span class="stat-label">СТАНКОВ</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" data-count="500">0</span>
+            <span class="stat-label">ПРОЕКТОВ</span>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-robot"></i> Проекты
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Связаться
+          </a>
+        </div>
+        <div class="social-links">
+          <a href="mailto:grachevcnc@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/mralexrook-sketch" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="cnc-machine">
+          <div class="machine-frame">
+            <div class="machine-screen">
+              <div class="screen-content">
+                <div class="code-line"><span class="code-n">N10</span> <span class="code-g">G54</span> <span class="code-x">X0</span> <span class="code-y">Y0</span></div>
+                <div class="code-line"><span class="code-n">N20</span> <span class="code-g">G00</span> <span class="code-z">Z100</span></div>
+                <div class="code-line"><span class="code-n">N30</span> <span class="code-g">M03</span> <span class="code-s">S12000</span></div>
+                <div class="code-line"><span class="code-n">N40</span> <span class="code-g">G01</span> <span class="code-f">F2000</span></div>
+                <div class="cursor">_</div>
+              </div>
+            </div>
+            <div class="machine-parts">
+              <div class="gear gear-1"><i class="fas fa-cog"></i></div>
+              <div class="gear gear-2"><i class="fas fa-cog"></i></div>
+              <div class="robot-arm"><i class="fas fa-robot"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-number">01.</span> ОБ ОБО МНЕ</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="tech-card">
+            <div class="card-header">
+              <i class="fas fa-terminal"></i>
+              <span>SYSTEM_INFO.exe</span>
+            </div>
+            <div class="card-body">
+              <div class="info-row">
+                <span class="info-label">POSITION:</span>
+                <span class="info-value">CNC Engineer</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">EXPERIENCE:</span>
+                <span class="info-value">10+ years</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">SPECIALIZATION:</span>
+                <span class="info-value">5-axis machining</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">LOCATION:</span>
+                <span class="info-value">Kazan, Russia</span>
+              </div>
+              <div class="progress-bars">
+                <div class="progress-item">
+                  <span class="progress-label">Siemens NX</span>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+                </div>
+                <div class="progress-item">
+                  <span class="progress-label">Post-Processors</span>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="progress-item">
+                  <span class="progress-label">Reverse Engineering</span>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <h3 class="about-subtitle">ИНЖЕНЕР-ПРОГРАММИСТ <span class="accent">ЧПУ</span></h3>
+          <p>
+            Специализируюсь на разработке управляющих программ для сложных 
+            <span class="highlight">5-осевых обрабатывающих центров</span> и 
+            <span class="highlight">роботизированных ячеек</span>. 
+            Глубокое понимание кинематики станков позволяет создавать оптимизированные 
+            постпроцессоры и минимизировать время обработки.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <div class="feature-icon"><i class="fas fa-code"></i></div>
+              <div class="feature-text">
+                <strong>Разработка постпроцессоров</strong>
+                <span>На языке Tcl для Siemens, Fanuc, Heidenhain</span>
+              </div>
+            </li>
+            <li>
+              <div class="feature-icon"><i class="fas fa-cubes"></i></div>
+              <div class="feature-text">
+                <strong>Реверс-инжиниринг</strong>
+                <span>3D-сканирование → облако точек → CAD-модель</span>
+              </div>
+            </li>
+            <li>
+              <div class="feature-icon"><i class="fas fa-print"></i></div>
+              <div class="feature-text">
+                <strong>Аддитивные технологии</strong>
+                <span>FDM/SLA/SLS печать для оснастки</span>
+              </div>
+            </li>
+            <li>
+              <div class="feature-icon"><i class="fas fa-industry"></i></div>
+              <div class="feature-text">
+                <strong>Промышленные отрасли</strong>
+                <span>Нефтегазовая, химическая, медицинская</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section bg-darker">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-number">02.</span> ОПЫТ РАБОТЫ</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="timeline">
+        
+        <!-- Вакууммаш -->
+        <div class="timeline-item">
+          <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-badge">ЯНВ 2025 — Н.В.</div>
+            <h3>ВЕДУЩИЙ ИНЖЕНЕР-ПРОГРАММИСТ</h3>
+            <div class="timeline-company"><i class="fas fa-building"></i> ОАО «Вакууммаш»</div>
+            <ul class="timeline-list">
+              <li>Разработка управляющих программ (УП), оснастки и карт наладки</li>
+              <li>Создание постпроцессоров под Siemens NX на языке Tcl</li>
+              <li>Программирование 5-осевых, 3-осевых, токарно-фрезерных станков</li>
+              <li>Работа с горизонтально-расточными станками с ЧПУ</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- СИБУР -->
+        <div class="timeline-item">
+          <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-badge">АВГ 2022 — Н.В.</div>
+            <h3>ИНЖЕНЕР-ПРОГРАММИСТ</h3>
+            <div class="timeline-company"><i class="fas fa-building"></i> ГК «СИБУР»</div>
+            <ul class="timeline-list">
+              <li>Работа в Siemens NX, КОМПАС, ADEM, CIMCO, Geomagic</li>
+              <li>Создание 3D-моделей деталей, оснастки, инструмента</li>
+              <li>Написание УП для фрезерных станков с поворотным столом (3+2 и 5 осей)</li>
+              <li>Программирование токарных обрабатывающих центров с приводными блоками</li>
+              <li>Работа с DMC 1035 (3 оси), расточными вертикальными и горизонтальными станками</li>
+              <li>Программирование 2-осевых токарных станков и плазменной резки</li>
+              <li>Обработка материалов: нержавеющая сталь, закалённая сталь, чугун, цветные металлы</li>
+              <li>Подбор и закупка инструмента, расчёт режимов резания при пусконаладке</li>
+              <li>Внедрение реверс-инжиниринга: сканер + Hexagon CMM → CAD-модель</li>
+              <li>3D-печать оснастки: PETG, PLA, TPU, ABS</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Казаньоргсинтез - Наладчик -->
+        <div class="timeline-item">
+          <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-badge">АПР 2020 — АВГ 2022</div>
+            <h3>НАЛАДЧИК АВТОМАТОВ И ПОЛУАВТОМАТОВ (6 РАЗРЯД)</h3>
+            <div class="timeline-company"><i class="fas fa-building"></i> ПАО «Казаньоргсинтез»</div>
+            <ul class="timeline-list">
+              <li>Наладка, техническое обслуживание и ремонт станков с ЧПУ</li>
+              <li>Организация отправки оборудования на ремонт и последующая приёмка</li>
+              <li>Изготовление единичных и серийных деталей</li>
+              <li>Написание управляющих программ в Siemens NX</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Казаньоргсинтез - Токарь 5 разряд -->
+        <div class="timeline-item">
+          <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-badge">ЯНВ 2019 — АПР 2020</div>
+            <h3>ТОКАРЬ / ОПЕРАТОР ЧПУ (5 РАЗРЯД)</h3>
+            <div class="timeline-company"><i class="fas fa-building"></i> ПАО «Казаньоргсинтез»</div>
+            <ul class="timeline-list">
+              <li>Мелкосерийное и единичное производство деталей на токарных станках с ЧПУ</li>
+              <li>Измерительный контроль готовой продукции согласно чертежам</li>
+              <li>Обслуживание, наладка оборудования и изготовление технологической оснастки</li>
+              <li>Подбор режущего инструмента и режимов обработки</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Казаньоргсинтез - Токарь 4 разряд -->
+        <div class="timeline-item">
+          <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-badge">ОКТ 2017 — ЯНВ 2019</div>
+            <h3>ТОКАРЬ / ОПЕРАТОР ЧПУ (4 РАЗРЯД)</h3>
+            <div class="timeline-company"><i class="fas fa-building"></i> ПАО «Казаньоргсинтез»</div>
+            <ul class="timeline-list">
+              <li>Работа на токарных станках с ЧПУ: единичное и мелкосерийное производство</li>
+              <li>Контроль размеров и геометрии деталей по чертежам</li>
+              <li>Наладка оборудования, изготовление оснастки, подбор инструмента</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Завод-Элекон -->
+        <div class="timeline-item">
+          <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-badge">ДЕК 2015 — АВГ 2017</div>
+            <h3>ОПЕРАТОР СТАНКОВ С ЧПУ (2 РАЗРЯД)</h3>
+            <div class="timeline-company"><i class="fas fa-building"></i> ОАО «Завод-Элекон»</div>
+            <ul class="timeline-list">
+              <li>Изготовление деталей на токарных станках с ЧПУ (стойки Fanuc, Balt-system)</li>
+              <li>Сверка готовых деталей с чертежами, контроль выполнения программы</li>
+              <li>Корректировка управляющих программ, написание УП</li>
+              <li>Подбор инструмента и режимов резания под материал заготовки</li>
+              <li>Установка/смена инструмента, наладка нулевого положения и зажимных приспособлений</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-number">03.</span> ТЕХНИЧЕСКИЕ НАВЫКИ</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skill-category">
+          <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>CAM / CAD СИСТЕМЫ</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Siemens NX</span><div class="skill-level" data-level="95"></div></div>
+            <div class="skill-item"><span class="skill-name">КОМПАС-3D</span><div class="skill-level" data-level="90"></div></div>
+            <div class="skill-item"><span class="skill-name">ADEM</span><div class="skill-level" data-level="85"></div></div>
+            <div class="skill-item"><span class="skill-name">Geomagic</span><div class="skill-level" data-level="80"></div></div>
+            <div class="skill-item"><span class="skill-name">CIMCO Edit</span><div class="skill-level" data-level="88"></div></div>
+            <div class="skill-item"><span class="skill-name">Tcl (Post-Processor)</span><div class="skill-level" data-level="88"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon"><i class="fas fa-microchip"></i></div>
+          <h3>КОНТРОЛЛЕРЫ</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Siemens Sinumerik</span><div class="skill-level" data-level="92"></div></div>
+            <div class="skill-item"><span class="skill-name">Fanuc</span><div class="skill-level" data-level="88"></div></div>
+            <div class="skill-item"><span class="skill-name">Heidenhain</span><div class="skill-level" data-level="85"></div></div>
+            <div class="skill-item"><span class="skill-name">Balt-system</span><div class="skill-level" data-level="80"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon"><i class="fas fa-robot"></i></div>
+          <h3>ОБОРУДОВАНИЕ</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">5-осевые фрезерные</span><div class="skill-level" data-level="95"></div></div>
+            <div class="skill-item"><span class="skill-name">Токарно-фрезерные центры</span><div class="skill-level" data-level="90"></div></div>
+            <div class="skill-item"><span class="skill-name">Горизонтально-расточные</span><div class="skill-level" data-level="85"></div></div>
+            <div class="skill-item"><span class="skill-name">Плазменная резка</span><div class="skill-level" data-level="82"></div></div>
+            <div class="skill-item"><span class="skill-name">3D-принтеры (FDM/SLA)</span><div class="skill-level" data-level="88"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon"><i class="fas fa-ruler-combined"></i></div>
+          <h3>ИЗМЕРЕНИЯ / RE</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Hexagon CMM</span><div class="skill-level" data-level="85"></div></div>
+            <div class="skill-item"><span class="skill-name">3D-сканирование</span><div class="skill-level" data-level="88"></div></div>
+            <div class="skill-item"><span class="skill-name">GD&T</span><div class="skill-level" data-level="82"></div></div>
+            <div class="skill-item"><span class="skill-name">Метрология</span><div class="skill-level" data-level="85"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>МАТЕРИАЛЫ</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Нержавеющая сталь</span><div class="skill-level" data-level="90"></div></div>
+            <div class="skill-item"><span class="skill-name">Закалённая сталь</span><div class="skill-level" data-level="88"></div></div>
+            <div class="skill-item"><span class="skill-name">Чугун / Цветные металлы</span><div class="skill-level" data-level="85"></div></div>
+            <div class="skill-item"><span class="skill-name">Термообработка</span><div class="skill-level" data-level="80"></div></div>
+            <div class="skill-item"><span class="skill-name">Полимеры (PETG/PLA/TPU/ABS)</span><div class="skill-level" data-level="85"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-darker">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-number">04.</span> ИЗБРАННЫЕ ПРОЕКТЫ</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-cube"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>ПОСТПРОЦЕССОР ДЛЯ 5-ОСЕВОГО СТАНКА</h3>
+          <div class="project-description">
+            Разработка постпроцессора на Tcl под кинематику станка с поворотным столом. 
+            Учет ограничений осей, коллизий, оптимизация траекторий.
+          </div>
+          <ul class="project-tech">
+            <li>Siemens NX</li>
+            <li>Tcl</li>
+            <li>5-axis</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-sync-alt"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>РЕВЕРС-ИНЖИНИРИНГ ДЕТАЛИ НАСОСА</h3>
+          <div class="project-description">
+            Полный цикл: 3D-сканирование → Geomagic → параметрическая модель в NX → 
+            УП для восстановления изношенной детали.
+          </div>
+          <ul class="project-tech">
+            <li>Reverse Engineering</li>
+            <li>Hexagon</li>
+            <li>Geomagic</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-print"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>ОСНАСТКА ДЛЯ ЧПУ НА 3D-ПРИНТЕРЕ</h3>
+          <div class="project-description">
+            Проектирование и печать быстрозаменяемой оснастки из ABS/TPU. 
+            Сокращение времени переналадки на 30%.
+          </div>
+          <ul class="project-tech">
+            <li>Adaptive Manufacturing</li>
+            <li>FDM</li>
+            <li>Tooling</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-code"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>АВТОМАТИЗАЦИЯ ПОДБОРА РЕЖИМОВ</h3>
+          <div class="project-description">
+            Скрипты для расчёта оптимальных режимов резания в зависимости от материала 
+            и инструмента. Интеграция с CAM-системами.
+          </div>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>Cutting Data</li>
+            <li>Automation</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-number">05.</span> ОБРАЗОВАНИЕ</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="education-grid">
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h4>Магистр, Биотехнология</h4>
+          <p class="edu-university">КНИТУ, Казань</p>
+          <p class="edu-year">2023</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h4>Магистр, Машиностроение лёгкой промышленности</h4>
+          <p class="edu-university">КНИТУ, Казань</p>
+          <p class="edu-year">2021</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+          <h4>СПО, Технология машиностроения</h4>
+          <p class="edu-university">КТК КНИТУ</p>
+          <p class="edu-year">2015</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="section bg-darker">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-number">06.</span> КУРСЫ И СЕРТИФИКАТЫ</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="cert-grid">
+        <div class="cert-card">
+          <i class="fas fa-certificate"></i>
+          <div>
+            <strong>Программирование G-кода</strong>
+            <p>Балт-Систем, «Становление», г. Пермь • 2018</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-certificate"></i>
+          <div>
+            <strong>Курсы Fanuc</strong>
+            <p>Сертификация по программированию контроллеров Fanuc • 2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-number">07.</span> СВЯЗАТЬСЯ СО МНОЙ</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>ГОТОВ К НОВЫМ <span class="accent">ПРОЕКТАМ</span></h3>
+          <p>
+            Ищу возможности для работы с современными обрабатывающими центрами 
+            и роботизированными комплексами. Открыт к интересным проектам в 
+            нефтегазовой, химической и медицинской отраслях.
+          </p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon"><i class="fas fa-envelope"></i></div>
+              <div class="method-info">
+                <span class="method-label">Email</span>
+                <a href="mailto:grachevcnc@gmail.com">grachevcnc@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon"><i class="fas fa-phone"></i></div>
+              <div class="method-info">
+                <span class="method-label">Телефон</span>
+                <span>+7 (XXX) XXX-XX-XX</span>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon"><i class="fab fa-telegram-plane"></i></div>
+              <div class="method-info">
+                <span class="method-label">Telegram</span>
+                <a href="https://t.me/yourtelegram">@yourtelegram</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="method-info">
+                <span class="method-label">Локация</span>
+                <span>Казань, Россия</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-social">
+            <a href="https://github.com/mralexrook-sketch" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn"><i class="fas fa-file-download"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form-wrapper">
+          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+              <label for="name">ИМЯ</label>
+              <input type="text" id="name" name="name" required placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">СООБЩЕНИЕ</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Опишите проект..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> ОТПРАВИТЬ
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-cog"></i>
+          <span>CNC ENGINEER</span>
+        </div>
+        <p class="footer-text">
+          &copy; 2026 Грачев Алексей Сергеевич. Разработано с <i class="fas fa-heart"></i> и <i class="fas fa-coffee"></i>
+        </p>
+        <p class="footer-note">
+          <a href="https://github.com/mralexrook-sketch/mralexrook-sketch.github.io" target="_blank">
+            <i class="fab fa-github"></i> Исходный код на GitHub
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
